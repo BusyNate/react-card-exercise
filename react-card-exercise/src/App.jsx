@@ -1,6 +1,6 @@
-import Post from './components/post';
+import Post from './components/Main/Post/post';
 import icy_mount from './assets/icy_mount.png';
-
+import './App.css';
 
 function App(){
 
@@ -15,7 +15,10 @@ function App(){
         }
 
     return(
-        <div>
+        <div className="main-container">
+            <Post post={post}/>
+            <Post post={post}/>
+            <Post post={post}/>
             <Post post={post}/>
         </div>
     )
